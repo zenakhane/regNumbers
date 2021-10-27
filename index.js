@@ -65,18 +65,22 @@ app.get('/addFlash', function (req, res) {
 });
 
 app.post('/', function(req, res){
+  let regi = req.body.registration
+  console.log(regi)
   res.render('index',{
-    regDisplay:  townRegistrations.displayRegistrations(),
+   
+    regDisplay:  townRegistrations.setRegNumbers(regi),
     errors: townRegistrations.regErrors()
     })
+    console.log(townRegistrations.setRegNumbers(regi))
 })
-app.post('/regNum', function(req,res){
-  var regList = townRegistrations.setRegDisplay(req.body.registration)
-        res.render('index', {
-            regDisplay: regList,
-           
-        })
-  })
+// app.post('/regNum', function(req,res){
+//   let regi = req.body.registration
+//   console.log(regi)
+//         res.render('index', {
+//           regDisplay:  townRegistrations.setRegDisplay(regi),
+//           })
+//   })
 
 
 // app.get('/reset', routesG.resetAll)

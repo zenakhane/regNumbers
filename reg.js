@@ -21,9 +21,9 @@ module.exports = function Registra(pool) {
         function setRegNumbers(register) {
             // register = register.toUpperCase();
             if (!regDisplay.includes(register)) {
-                registrationDisplay++;
+                // registrationDisplay++;
                 regDisplay.push(register);
-                return true
+                return regDisplay
             }
         }
     
