@@ -1,0 +1,52 @@
+.head {
+    text-align: center;
+    font-size: x-large;
+    border: 5px solid black;
+    border-radius: 100%;
+    margin-bottom: 3%;
+}
+
+.regbuttons {
+    display: inline-block;
+    margin: 3%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: rgb(86, 136, 228);
+}
+
+.regBox {
+    box-shadow: whitesmoke;
+}
+
+button {
+    padding: 6px 8px;
+    margin: 8px 0px;
+}
+
+input[type=text] {
+    width: 20%;
+    padding: 6px 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+li {
+    float: left;
+    background-color: palevioletred;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 1%;
+    padding: 1%;
+}
+
+ul {
+    list-style: none;
+}
+
+.errors {
+    font-style: italic;
+    color: rgb(16, 174, 48);
+}

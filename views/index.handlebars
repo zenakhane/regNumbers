@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Registrations/registration_number.css">
+    <title>Registration webpage</title>
+</head>
+<div class="head">
+    <label for="Heading">Registration Numbers</label>
+</div>
+
+<body>
+    <div class="clear">
+         <h3>{{messages.error}}</h3>
+      </div>
+
+    <form action="/regNum" method="post">
+    <div class="regBox">
+        <label for="reg">Enter registration number here:</label>
+        <input type="text" id="regNumber" name="registration" class="registration">
+        <button type="submit" class="addBtn">Add</button>
+    </div>
+     
+
+    <div class="info">
+        <p class="reglist">
+        </p>
+    </div>
+    </div>
+    <div class="regbuttons">
+
+        <input type="radio" id="CapeTown" name="register" value="CA">
+        <label for="reg">Cape Town</label>
+        <input type="radio" id="Bellville" name="register" value="CY">
+        <label for="reg">Bellville</label>
+        <input type="radio" id="Stellenbosch" name="register" value="CL">
+        <label for="reg">Stellenbosch</label>
+        <input type="radio" id="Show" name="register" value="">
+        <label for="showButton">Show All</label>
+
+    </div>
+    <div class="dispBttn">
+        <button class="display">Display</button>
+     
+  </form>
+        <button class="reset">reset</button>
+        
+        <ul id="myList">
+{{!-- {{#each}} --}}
+         {{regDisplay}}
+      {{!-- {{/each}} --}}
+        </ul>
